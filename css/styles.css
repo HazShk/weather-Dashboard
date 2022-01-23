@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.page-header {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, #3463bc, #20094b);
+  padding: 1.5rem 4rem;
+}
+
+.page-title {
+  font-size: 4rem;
+}
+
+.page-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.section {
+  padding: 1.2rem;
+}
+
+.search-section {
+  width: 33rem;
+}
+
+.buttons-container {
+  height: 40rem;
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 2.8rem;
+}
+
+.city-form {
+  border-bottom: 2px solid black;
+  margin-bottom: 1.5rem;
+}
+
+#city-input {
+  width: 100%;
+  margin: 1.5rem 0 0;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #ddd;
+  color: #222;
+}
+
+.btn {
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+  background-color: #aeaeae;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #5098e6;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+/* Dashboard-Section */
+
+.dashboard-section {
+  flex: 2;
+}
+
+.weather-today {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.city-name {
+  font-size: 2.8rem;
+  display: inline-block;
+}
+
+.part-head {
+  display: flex;
+  align-items: center;
+}
+
+.weather-info {
+  font-size: 1.6rem;
+  line-height: 2.3;
+}
+
+.forecast-info {
+  margin-top: 3.5rem;
+}
+
+.part-title {
+  font-size: 2.8rem;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  width: 18rem;
+  background-color: #2d3e50;
+  color: white;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.forecast-date {
+  font-size: 1.8rem;
+}
+
+.showuvi {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.green {
+  background-color: #299501;
+}
+
+.yellow {
+  background-color: #f7e401;
+}
+
+.orange {
+  background-color: #f95901;
+}
+
+.red {
+  background-color: #d90011;
+}
+
+.purple {
+  background-color: #6c49c9;
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-container {
+    flex-wrap: wrap;
+  }
+  .search-section,
+  .weather-today {
+    width: 100%;
+  }
+  .page-title,
+  .part-title,
+  .section-title,
+  .city-name {
+    font-size: 2.5rem;
+  }
+  .buttons-container {
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .page-title,
+  .part-title,
+  .section-title,
+  .city-name {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .forecast-container {
+    justify-content: center;
+  }
+  .forecast-card {
+    width: 100%;
+    text-align: center;
+  }
+}

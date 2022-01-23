@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <h1 class="page-title">Weather Dashboard</h1>
+    </header>
+
+    <!-- Main-Content -->
+    <main class="page-container">
+      <!-- Search-Section -->
+      <section class="section search-section">
+        <h2 class="section-title">Search for a city:</h2>
+        <form class="city-form">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter City Name"
+            required
+          />
+          <button type="submit" class="btn btn-submit">Search</button>
+        </form>
+        <div class="buttons-container"></div>
+      </section>
+
+      <!-- Dashboard-Section -->
+      <section class="section dashboard-section">
+        <div class="weather-today-container"></div>
+        <div class="forecast-info" style="display: none">
+          <h2 class="part-title">5-Day Forcast:</h2>
+          <div class="forecast-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Script -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
